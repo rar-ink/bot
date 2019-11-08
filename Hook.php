@@ -5,8 +5,8 @@ $method = "setWebhook";
 
 $url = "https://api.telegram.org/bot" . TOKEN . "/" . $method;
 $option = [
-    "url" => "https://rpgtestbot.herokuapp.com/index.php"
-]
+    "url" => "https://rpgtestbot.herokuapp.com/index.php",
+];
 
 $responce = file_get_contents($url . "?" . http_build_query($options));
 
