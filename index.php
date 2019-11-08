@@ -1,7 +1,7 @@
 <?php
 
 const TOKEN = "1004092197:AAE2TX6Fx6_3WOLBG-9ILRTWELtNjStPylQ";
-const BASE_URL = "https://api.telegram.org/bot" . TOKEN . '/';
+const BASE_URL = "https://api.telegram.org/bot" . TOKEN . '/getMe';
 
 $update = json_decode(file_get_contents('php://input'), JSON_OBJECT_AS_ARRAY);
 
