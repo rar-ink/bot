@@ -1,14 +1,8 @@
 <?php
 
-const TOKEN = '1004092197:AAE2TX6Fx6_3WOLBG-9ILRTWELtNjStPylQ';
-$method = 'setWebhook';
+$url = "https://api.telegram.org/bot"1004092197:AAE2TX6Fx6_3WOLBG-9ILRTWELtNjStPylQ"/setWebhook?url=https://rpgtestbot.herokuapp.com/index.php";
+$l1=file_get_contents($url);
+$response = json_decode($l1);
+$s=print_r($response);
 
-$url = 'https://api.telegram.org/bot' . TOKEN . '/' . $method;
-$options = [
-    'url' => 'https://rpgtestbot.herokuapp.com/index.php',
-];
-
-$responce = file_get_contents($url . '?' . http_build_query($options));
-
-var_dump($responce);
 ?>
