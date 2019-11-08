@@ -4,7 +4,7 @@ const TOKEN = '1004092197:AAE2TX6Fx6_3WOLBG-9ILRTWELtNjStPylQ';
 $method = 'setWebhook';
 
 $url = 'https://api.telegram.org/bot' . TOKEN . '/' . $method;
-$option = [
+$options = [
     'url' => 'https://rpgtestbot.herokuapp.com/index.php',
 ];
 
