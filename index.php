@@ -20,7 +20,7 @@ if ($first_name!="" AND $last_name!="") $text="Здравствуйте, ".$firs
 if ($text!="")
 {
 $text=urlencode ($text);
-$url = "https://api.telegram.org/bot1004092197:AAE2TX6Fx6_3WOLBG-9ILRTWELtNjStPylQ/sendMessage?chat_id=".$chat_id."&amp;text=".$text."&amp;parse_mode=HTML&amp;disable_web_page_preview=false&amp;disable_notification=false";
+$url = "https://api.telegram.org/bot1004092197:AAGkyHB3XGrFV0ATWjhmQFrm70ajSBbPH-Q/sendMessage?chat_id=".$chat_id."&amp;text=".$text."&amp;parse_mode=HTML&amp;disable_web_page_preview=false&amp;disable_notification=false";
 $json=file_get_contents($url);
 };
 } //private chat
